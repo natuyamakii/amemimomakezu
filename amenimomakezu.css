@@ -1,0 +1,1199 @@
+.header {
+  background-color: #0f1c63;
+  color: #fff;
+  height: 180px;
+}
+
+body {
+  text-align: center
+}
+
+
+.header-list li {
+  float: left;
+  padding: 100px 20px;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.amenimomakezu {
+  float: left;
+  font-size: 50px;
+  padding: 20px 40px;
+}
+
+.taitoru1 {
+  font-size: 50px;
+  background: linear-gradient(transparent 70%, #00ffe1 0%);
+}
+
+
+
+
+
+
+
+.taitoru2 {
+  font-size: 80px;
+  border-bottom: double;
+  /*二重線を引く*/
+  border-color: #FF0000;
+  border-width: 3px;
+}
+
+
+
+
+.kafe1 img {
+  height: 800px;
+  width: 1400px;
+}
+
+.kafe2 img {
+  height: 400px;
+  width: 700px;
+  margin-left: auto
+}
+
+.kafe3 img {
+  height: 400px;
+  width: 700px;
+}
+
+
+
+
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cp_cssslider {
+  width: 85%;
+  padding-top: 650px;
+  /* 画像の高さ */
+  position: relative;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.cp_cssslider>img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin-left: 81px;
+}
+
+.cp_cssslider input[name='cp_switch'] {
+  display: none;
+}
+
+/* サムネイル */
+.cp_cssslider label {
+  margin: 15px 5px 0px 5px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0.6;
+  border-radius: 3px;
+}
+
+.cp_cssslider label:hover {
+  opacity: 0.9;
+}
+
+.cp_cssslider label img {
+  display: block;
+  width: 40px;
+  border-radius: 2px;
+}
+
+.cp_cssslider input[name='cp_switch']:checked+label {
+  border: 2px solid #FF7043;
+  opacity: 1;
+}
+
+.cp_cssslider input[name='cp_switch']~img {
+  opacity: 0;
+}
+
+.cp_cssslider input[name='cp_switch']:checked+label+img {
+  opacity: 1;
+}
+
+
+
+.cp_cssslider img {
+  size-adjust: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 5rem;
+}
+
+
+/*========= 1文字ずつ出現させるためのCSS ===============*/
+
+.eachTextAnime span {
+  opacity: 0;
+}
+
+
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Sniglet', cursive;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: px;
+  color: rgb(2, 2, 2);
+  text-align: center;
+
+}
+
+/* Animation webkit */
+@-webkit-keyframes myfirst {
+  0% {
+    margin-left: -235px
+  }
+
+  90% {
+    margin-left: 100%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+/* Animation */
+@keyframes myfirst {
+  0% {
+    margin-left: -235px
+  }
+
+  70% {
+    margin-left: 100%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.fish {
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+  width: 235px;
+  height: 104px;
+  margin-left: -235px;
+  position: absolute;
+  animation: myfirst 24s;
+  -webkit-animation: myfirst 24s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
+#fish {
+  top: 120px;
+}
+
+#fish2 {
+  top: 260px;
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+}
+
+
+header {
+  height: 160px;
+  background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom;
+}
+
+#form {
+  height: 100%;
+  background-color: #98d4f3;
+  overflow: hidden;
+  position: relative;
+
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding-top: 40px;
+  color: white;
+  position: relative;
+
+
+}
+
+label, input, textarea {
+  display: block;
+}
+
+input, textarea {
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  font-family: 'Sniglet', cursive;
+  font-size: 1em;
+  color: #676767;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
+  -o-transition: border 0.5s;
+  border: solid 3px #98d4f3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+input:focus, textarea:focus {
+  border: solid 3px #77bde0;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  overflow: auto;
+}
+
+input[type="submit"] {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.29em;
+  font-family: 'Sniglet', cursive;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: #e58f0e;
+
+}
+
+label {
+  font-size: 1.5em;
+  margin-top: 20px;
+  /* padding-left: 20px; */
+}
+
+.formgroup, .formgroup-active, .formgroup-error {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 10.5%;
+  transition: background-image 0.7s;
+  -webkit-transition: background-image 0.7s;
+  -moz-transition: background-image 0.7s;
+  -o-transition: background-image 0.7s;
+  width: 566px;
+  padding-top: 2px;
+}
+
+.formgroup {
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');
+}
+
+.formgroup-active {
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+
+.formgroup-error {
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+  color: red;
+}
+
+
+
+
+
+
+
+
+.bunn {
+  font-size: 0mm;
+}
+
+
+
+
+
+
+
+
+
+.menyu-1 img {
+  height: 2000px;
+  width: 1400px;
+}
+
+
+
+.menyu-2 img {
+  height: 2000px;
+  width: 1400px;
+}
+
+
+
+
+
+
+
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bird {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  animation: moving 16s linear infinite;
+}
+
+.bird.-type_2 {
+  animation-delay: 1s;
+}
+
+.bird.-type_2:before,
+.bird.-type_2:after {
+  animation-delay: -2s;
+}
+
+.bird.-type_3 {
+  animation-delay: 3s;
+}
+
+@keyframes moving {
+  0% {
+    top: 47vh;
+    left: -2vw;
+  }
+
+  25% {
+    top: 51vh;
+    left: 23vw
+  }
+
+  100% {
+    top: 47vh;
+    left: 101vw;
+  }
+}
+
+.bird:before, .bird:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  transform: rotate(-30deg);
+  transform-origin: right bottom;
+}
+
+.bird:before {
+  width: 100%;
+  height: 1px;
+  animation: leftWing 8s linear infinite;
+}
+
+.bird:after {
+  width: 1px;
+  height: 100%;
+  animation: rightWing 8s linear infinite;
+}
+
+@keyframes leftWing {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  2% {
+    transform: rotate(-110deg);
+  }
+
+  4% {
+    transform: rotate(-30deg);
+  }
+
+  6% {
+    transform: rotate(-110deg);
+  }
+
+  8% {
+    transform: rotate(-30deg);
+  }
+
+  10% {
+    transform: rotate(-110deg);
+  }
+
+  12% {
+    transform: rotate(-30deg);
+  }
+
+  30% {
+    transform: rotate(-30deg);
+  }
+
+  42% {
+    transform: rotate(-35deg);
+  }
+
+  72% {
+    transform: rotate(-35deg);
+  }
+
+  74% {
+    transform: rotate(10deg);
+  }
+
+  76% {
+    transform: rotate(-30deg);
+  }
+
+  78% {
+    transform: rotate(-110deg);
+  }
+
+  80% {
+    transform: rotate(-30deg);
+  }
+
+  82% {
+    transform: rotate(-110deg);
+  }
+
+  84% {
+    transform: rotate(-30deg);
+  }
+
+  86% {
+    transform: rotate(-110deg);
+  }
+
+  88% {
+    transform: rotate(-30deg);
+  }
+
+  90% {
+    transform: rotate(-110deg);
+  }
+
+  92% {
+    transform: rotate(-30deg);
+  }
+
+  94% {
+    transform: rotate(-110deg);
+  }
+
+  96% {
+    transform: rotate(-30deg);
+  }
+
+  98% {
+    transform: rotate(-110deg);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes rightWing {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  2% {
+    transform: rotate(110deg);
+  }
+
+  4% {
+    transform: rotate(30deg);
+  }
+
+  6% {
+    transform: rotate(110deg);
+  }
+
+  8% {
+    transform: rotate(30deg);
+  }
+
+  10% {
+    transform: rotate(110deg);
+  }
+
+  12% {
+    transform: rotate(30deg);
+  }
+
+  30% {
+    transform: rotate(30deg);
+  }
+
+  42% {
+    transform: rotate(35deg);
+  }
+
+  72% {
+    transform: rotate(35deg);
+  }
+
+  74% {
+    transform: rotate(0deg);
+  }
+
+  76% {
+    transform: rotate(30deg);
+  }
+
+  78% {
+    transform: rotate(110deg);
+  }
+
+  80% {
+    transform: rotate(30deg);
+  }
+
+  82% {
+    transform: rotate(110deg);
+  }
+
+  84% {
+    transform: rotate(30deg);
+  }
+
+  86% {
+    transform: rotate(110deg);
+  }
+
+  88% {
+    transform: rotate(30deg);
+  }
+
+  90% {
+    transform: rotate(110deg);
+  }
+
+  92% {
+    transform: rotate(30deg);
+  }
+
+  94% {
+    transform: rotate(110deg);
+  }
+
+  96% {
+    transform: rotate(30deg);
+  }
+
+  98% {
+    transform: rotate(110deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+/****** Base style. ******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 50px;
+}
+
+#container {
+  position: relative;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: rgb(14, 0, 77);
+  overflow: hidden;
+}
+
+.ripples div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: solid 2px rgb(68, 202, 255);
+  border-radius: 50%;
+  opacity: 0;
+  animation: ripples_anim 2s linear infinite;
+}
+
+
+@keyframes ripples_anim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(-100px, -100px);
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+
+.ripples div:nth-of-type(1) {
+  left: 0;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.ripples div:nth-of-type(2) {
+  left: 10%;
+  top: 50%;
+  animation-delay: 3.5s;
+}
+
+.ripples div:nth-of-type(3) {
+  left: 30%;
+  top: 10%;
+  animation-delay: 2.5s;
+}
+
+.ripples div:nth-of-type(4) {
+  left: 40%;
+  top: 20%;
+  animation-delay: 0.5s;
+}
+
+.ripples div:nth-of-type(5) {
+  left: 50%;
+  top: 30%;
+  animation-delay: 2.1s;
+}
+
+.ripples div:nth-of-type(6) {
+  left: 60%;
+  top: 40%;
+  animation-delay: 3.2s;
+}
+
+.ripples div:nth-of-type(7) {
+  left: 70%;
+  top: 80%;
+  animation-delay: 4.1s;
+}
+
+.ripples div:nth-of-type(8) {
+  left: 80%;
+  top: 70%;
+  animation-delay: 1.2s;
+}
+
+.ripples div:nth-of-type(9) {
+  left: 90%;
+  top: 50%;
+  animation-delay: 1.7s;
+}
+
+.ripples div:nth-of-type(10) {
+  left: 100%;
+  top: 20%;
+  animation-delay: 4.5s;
+}
+
+
+
+
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #0c0c33;
+  overflow: hidden;
+}
+
+.container p {
+  padding: 20px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.rains {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*widthは雨の太さ、heightは長さ*/
+.rains span {
+  position: absolute;
+  width: 1px;
+  height: 180px;
+  background: #FFF;
+  opacity: 0.4;
+}
+
+
+
+/*雨の初期位置とアニメーション指定、leftはx座標での基準位置、topは開始位置、アニメーション時間は揺らぎ*/
+.rains span:nth-child(1) {
+  left: 5%;
+  top: -190px;
+  animation: rain-anim 10s infinite;
+}
+
+.rains span:nth-child(2) {
+  left: 10%;
+  top: -180px;
+  animation: rain-anim 11s infinite;
+}
+
+.rains span:nth-child(3) {
+  left: 15%;
+  top: -170px;
+  animation: rain-anim 8s infinite;
+}
+
+.rains span:nth-child(4) {
+  left: 20%;
+  top: -160px;
+  animation: rain-anim 12s infinite;
+}
+
+.rains span:nth-child(5) {
+  left: 25%;
+  top: -150px;
+  animation: rain-anim 10s infinite;
+}
+
+.rains span:nth-child(6) {
+  left: 30%;
+  top: -150px;
+  animation: rain-anim 11s infinite;
+}
+
+.rains span:nth-child(7) {
+  left: 35%;
+  top: -160px;
+  animation: rain-anim 13s infinite;
+}
+
+.rains span:nth-child(8) {
+  left: 40%;
+  top: -170px;
+  animation: rain-anim 7s infinite;
+}
+
+.rains span:nth-child(9) {
+  left: 45%;
+  top: -180px;
+  animation: rain-anim 9s infinite;
+}
+
+.rains span:nth-child(10) {
+  left: 50%;
+  top: -190px;
+  animation: rain-anim 11s infinite;
+}
+
+.rains span:nth-child(11) {
+  left: 55%;
+  top: -190px;
+  animation: rain-anim 10s infinite;
+}
+
+.rains span:nth-child(12) {
+  left: 60%;
+  top: -180px;
+  animation: rain-anim 6s infinite;
+}
+
+.rains span:nth-child(13) {
+  left: 65%;
+  top: -170px;
+  animation: rain-anim 14s infinite;
+}
+
+.rains span:nth-child(14) {
+  left: 70%;
+  top: -160px;
+  animation: rain-anim 12s infinite;
+}
+
+.rains span:nth-child(15) {
+  left: 75%;
+  top: -150px;
+  animation: rain-anim 10s infinite;
+}
+
+.rains span:nth-child(16) {
+  left: 80%;
+  top: -150px;
+  animation: rain-anim 14s infinite;
+}
+
+.rains span:nth-child(17) {
+  left: 85%;
+  top: -160px;
+  animation: rain-anim 8s infinite;
+}
+
+.rains span:nth-child(18) {
+  left: 90%;
+  top: -170px;
+  animation: rain-anim 9s infinite;
+}
+
+.rains span:nth-child(19) {
+  left: 95%;
+  top: -180px;
+  animation: rain-anim 11s infinite;
+}
+
+.rains span:nth-child(20) {
+  left: 100%;
+  top: -190px;
+  animation: rain-anim9 13s infinite;
+}
+
+/*アニメーションキーフレーム
+      一度落下したら次はキーフレーム1%の間に高さを戻して左右にずらして降らす*/
+@keyframes rain-anim {
+
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  4% {
+    transform: translate(0px, 600px);
+  }
+
+  5% {
+    transform: translate(200px, 0px);
+  }
+
+  9% {
+    transform: translate(200px, 600px);
+  }
+
+  10% {
+    transform: translate(-100px, 0px);
+  }
+
+  14% {
+    transform: translate(-100px, 600px);
+  }
+
+  15% {
+    transform: translate(-200px, 0px);
+  }
+
+  19% {
+    transform: translate(-200px, 600px);
+  }
+
+  20% {
+    transform: translate(100px, 0px);
+  }
+
+  24% {
+    transform: translate(100px, 600px);
+  }
+
+  25% {
+    transform: translate(-150px, 0px);
+  }
+
+  29% {
+    transform: translate(-150px, 600px);
+  }
+
+  30% {
+    transform: translate(-80px, 0px);
+  }
+
+  34% {
+    transform: translate(-80px, 600px);
+  }
+
+  35% {
+    transform: translate(150px, 0px);
+  }
+
+  39% {
+    transform: translate(150px, 600px);
+  }
+
+  40% {
+    transform: translate(-60px, 0px);
+  }
+
+  44% {
+    transform: translate(-60px, 600px);
+  }
+
+  45% {
+    transform: translate(90px, 0px);
+  }
+
+  49% {
+    transform: translate(90px, 600px);
+  }
+
+  50% {
+    transform: translate(60px, 0px);
+  }
+
+  54% {
+    transform: translate(60px, 600px);
+  }
+
+  55% {
+    transform: translate(-60px, 0px);
+  }
+
+  59% {
+    transform: translate(-60px, 600px);
+  }
+
+  60% {
+    transform: translate(-40px, 0px);
+  }
+
+  64% {
+    transform: translate(-40px, 600px);
+  }
+
+  65% {
+    transform: translate(40px, 0px);
+  }
+
+  69% {
+    transform: translate(40px, 600px);
+  }
+
+  70% {
+    transform: translate(-20px, 0px);
+  }
+
+  74% {
+    transform: translate(-20px, 600px);
+  }
+
+  75% {
+    transform: translate(-110px, 0px);
+  }
+
+  79% {
+    transform: translate(-110px, 600px);
+  }
+
+  80% {
+    transform: translate(20px, 0px);
+  }
+
+  84% {
+    transform: translate(20px, 600px);
+  }
+
+  85% {
+    transform: translate(-20px, 0px);
+  }
+
+  89% {
+    transform: translate(-20px, 600px);
+  }
+
+  90% {
+    transform: translate(50px, 0px);
+  }
+
+  99% {
+    transform: translate(50px, 600px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+.heading03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  text-align: center;
+  color: #364e96;/*文字色*/
+  padding: 0.1em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  background: #04072e;
+  position: relative;
+  top: -50px;
+  z-index: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.okotoba {
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 1px #96c2fe;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+
+.uuu {
+  font-size: 5px;
+}
